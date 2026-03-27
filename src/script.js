@@ -13,11 +13,12 @@ while(input!=="quit" && input !=='q'){
         console.log(`${newTodo} added to the list!`);
     }else if(input==="delete"){
         const index=parseInt(prompt("Ok, enter an index to delete:"));
-        if(!Numnber.isNaN(index)){}
-        const deleted=todos.splice(index,1);
-        console.log(`Ok, deleted ${deleted[0]}`);
-    }else{
-        console.log("Unknown index.");
+        if(!Numnber.isNaN(index)){
+            const deleted=todos.splice(index,1);
+            console.log(`Ok, deleted ${deleted[0]}`);
+        }else{
+            console.log("unknown index");
+        }
     }
     input=prompt("What would you like to do?");
 }
