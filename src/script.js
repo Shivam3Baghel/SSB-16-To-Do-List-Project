@@ -1,6 +1,6 @@
 let input=prompt("What would you like to do?");
 const toDos=["Revise HTML","Revise CSS","Revise Bootstrap","Revise Javascript","Revise Node.js","Revise Express.js","Revise MongoDB","Revise React.js"];
-while(input!=="quit" && input !=='q'){
+while(input!=="quit" && input!=="q"){
     if(input==="list"){
         console.log("**********");
         for(let i=0;i<=toDos.length-1;i++){
